@@ -130,11 +130,17 @@ When the role sits outside your home domain, **lead with the domain-transfer arg
 **Create 2-3 profile statement templates for your main role types:**
 
 <!-- SETUP: These are populated based on your background -->
-**For [YOUR_PRIMARY_ROLE_TYPE] roles:**
-> [YOUR_PROFILE_STATEMENT_TEMPLATE_1]
+**For Senior Full Stack / Cloud Solution Architect roles:**
+> Hands-on Senior Software Engineer and Cloud Solution Architect with 17+ years designing, building and operating production software across financial services, payments, data, analytics and AI. Combines architecture ownership with full-stack delivery: translating business needs into secure, scalable platforms and then building the APIs, web applications, data services, integrations, cloud infrastructure and delivery pipelines required to run them in production. Cloud-agnostic across Azure, AWS and GCP; recent delivery includes Python/Django/FastAPI, React/Vue, GraphQL, event-driven and serverless systems, governed data platforms and AI-enabled workflows.
 
-**For [YOUR_SECONDARY_ROLE_TYPE] roles:**
-> [YOUR_PROFILE_STATEMENT_TEMPLATE_2]
+**For AI / ML Engineering / Agentic Systems roles:**
+> Senior Full Stack Engineer with 17+ years building enterprise platforms, specialising in production-grade agentic AI systems. Delivered multi-agent pipelines with human-in-the-loop controls, RAG, function calling and structured outputs using Azure OpenAI, AWS Bedrock, LangGraph and LangChain — integrated into full-stack platforms rather than deployed as standalone prototypes. Strong grounding in explainability, auditability and deterministic rule separation, with cloud delivery across Azure, AWS and GCP.
+
+**For Data Platform / Analytics Engineering roles:**
+> Senior Full Stack Engineer and Cloud Architect with 17+ years building data-driven enterprise platforms. Deep experience with Microsoft Fabric, OneLake, Azure Data Factory, Databricks, Power BI and medallion architecture — from governed bronze/silver/gold foundations through embedded analytics and AI-assisted workflows. Combines data platform engineering with full-stack delivery, so data assets are built to serve real products and real users, not just pipelines.
+
+**For Microsoft Ecosystem / Copilot Studio / Power Platform roles:**
+> Hands-on Senior Full Stack Engineer with 17+ years in enterprise platforms and four years shipping production AI inside a regulated Australian financial services group. Deep hands-on experience across the Microsoft AI and automation stack: Copilot Studio (12+ months, BI team agent with DAX connector in production Teams deployment), Azure OpenAI, Microsoft Fabric, OneLake, Power Automate, LangGraph and MCP integrations. Combines Microsoft ecosystem delivery with full-stack engineering in Python, Django, FastAPI, React and Vue.js; holds Entra ID SSO/RBAC and Power Platform DLP governance patterns across all production agent work.
 
 Statements labeled *[Used for: <company>_<role>]* were extracted from archived application drafts by `/setup` Path A. They are **phrasing references, never fact sources**: when drafting from one, every factual claim still comes from `01-candidate-profile.md` - a past tailored draft does not vouch for its own accuracy.
 

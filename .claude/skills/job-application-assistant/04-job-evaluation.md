@@ -60,9 +60,9 @@ How well do the required/preferred skills align with the candidate's capabilitie
 | 40-59 | Partial match, significant upskilling needed |
 | 0-39 | Fundamental mismatch |
 
-**Strong match areas:** [YOUR_PRIMARY_SKILLS]
-**Moderate match areas:** [YOUR_SECONDARY_SKILLS]
-**Weak match areas:** [SKILLS_YOU_LACK]
+**Strong match areas:** Python, Django, FastAPI, Node.js, TypeScript, React, Vue.js, GraphQL, Azure (Fabric/OneLake/ADF/Entra ID/Power BI Embedded/Durable Functions), AWS (Lambda/Step Functions/Bedrock/serverless), GCP (Firebase/Firestore/Cloud Functions), agentic AI systems (LangGraph, LangChain, RAG, Azure OpenAI, AWS Bedrock), Microsoft Fabric/Databricks, full-stack enterprise platform delivery, financial services/FinTech/EdTech
+**Moderate match areas:** Data science/analytics, DevOps/SRE, technical project management, PHP, Java, R, AngularJS, geospatial platforms
+**Weak match areas:** Native mobile development (iOS/Android), academic ML research, pure data science research roles, Salesforce/SAP development
 
 ### 2. Experience Match (0-100)
 Does work history align with what they're looking for? Match on the function and nature of the work performed, not the literal job title - a "Data Consultant" and a "Data Scientist" role can be functionally identical.
@@ -74,9 +74,9 @@ Does work history align with what they're looking for? Match on the function and
 | 40-59 | Adjacent experience, would need to make the case |
 | 0-39 | Unrelated experience |
 
-**Strong:** [YOUR_DIRECT_EXPERIENCE_DOMAINS]
-**Moderate:** [YOUR_ADJACENT_EXPERIENCE]
-**Entry-level:** [ROLES_WITH_LIMITED_EXPERIENCE]
+**Strong:** Full-stack platform engineering, cloud architecture (Azure/AWS/GCP), AI/ML engineering (agentic systems, RAG, LLM integration), data platforms (Fabric/Databricks/Power BI), financial services/FinTech, EdTech, regulated/compliance systems
+**Moderate:** DevOps/SRE, technical consulting, product management, geospatial platforms
+**Entry-level:** Native mobile development, academic ML research, hardware/embedded systems (early background only)
 
 ### 3. Behavioral/Culture Fit (0-100)
 Does the role and company culture match the behavioral profile?
@@ -107,19 +107,19 @@ Does this role advance career goals and contain tasks that energize?
 | 0-39 | Dead end or backwards step |
 
 **Career goals:**
-- [YOUR_CAREER_GOAL_1]
-- [YOUR_CAREER_GOAL_2]
-- [YOUR_CAREER_GOAL_3]
+- Build and own production-grade agentic AI systems and LLM-integrated platforms in an enterprise context
+- Hold cloud architecture accountability (Azure/AWS/GCP) alongside hands-on full-stack engineering delivery
+- Grow into a principal/staff engineer or technical lead role that keeps meaningful engineering accountability
 
 **Motivation filter:** Evaluate not just whether you *can* do the tasks, but whether the tasks will *energize* you. Consider:
-- Tasks that energize: [YOUR_ENERGIZING_TASKS]
-- Tasks that drain: [YOUR_DRAINING_TASKS]
+- Tasks that energize: designing and building agentic/automation systems; cloud architecture decisions with production consequences; full-stack platform delivery from concept through release; solving hard engineering problems in regulated/enterprise environments; technical leadership that still involves writing code
+- Tasks that drain: pure management with no hands-on engineering; maintenance-only work with no new product delivery; junior/support roles with no architectural input; roles where AI/cloud is a peripheral add-on rather than a core responsibility
 - Non-task factors: leadership style, department culture, company values, degree of autonomy
 
 **Life situation alignment:** Consider personal constraints:
-- **Security**: [YOUR_FINANCIAL_SITUATION_CONTEXT]
-- **Flexibility**: [YOUR_SCHEDULE_CONSTRAINTS]
-- **Professional development**: [YOUR_GROWTH_PRIORITIES]
+- **Security**: Salary floor is AUD $150,000 base + superannuation — flag anything below this, but do not auto-exclude (range may be negotiable or understated in the posting)
+- **Flexibility**: Melbourne-based; open to hybrid or remote; occasional interstate travel (Sydney/Brisbane/Perth/Adelaide) is fine; no relocation
+- **Professional development**: Priority is deepening agentic AI systems expertise and cloud architecture ownership; wants to remain technically hands-on while growing leadership scope
 
 ### 6. Salary Benchmark (Optional)
 

@@ -1,8 +1,7 @@
-%% Example CV - [YOUR_NAME]
+%% Master CV - Vrandesh Bandikatti
 %% Comprehensive overview of all competencies, experience, and achievements.
 %% Use as a master reference when tailoring role-specific CVs.
 %%
-%% SETUP: Run /setup to populate this with your actual information.
 %% Compile with: lualatex main_example.tex
 %% (pdflatex often fails on modern MiKTeX with fontawesome5 font-expansion errors.)
 
@@ -33,23 +32,22 @@
     linkcolor=blue,
     filecolor=magenta,
     urlcolor=blue,
-    pdftitle={[YOUR_NAME] - CV},
+    pdftitle={Vrandesh Bandikatti - CV},
     % Keep pdfpagemode=UseNone: this block runs after moderncv's own
     % \AtEndPreamble (moderncv.cls sets pdfpagemode there), so a FullScreen
     % value here would win and open every CV in fullscreen presentation mode.
     pdfpagemode=UseNone,
 }}
 \usepackage[scale=0.80]{geometry}
+\usepackage{needspace}
 \usepackage{import}
 
 % personal data
-\name{[First]}{[Last]}
-% If you have no address to list, DELETE this whole line. \address{}{}{} fails
-% with "There's no line here to end" on every moderncv version.
-\address{[Your Address, City, Country]}{}{}
-\phone[mobile]{[+XX XXXXXXXXXX]}
-\email{[your.email@example.com]}
-\extrainfo{\href{[https://linkedin.com/in/your-profile]}{LinkedIn}, \href{[https://github.com/your-username]}{GitHub}}
+\name{Vrandesh}{Bandikatti}
+\address{Melbourne, Australia}{}{}
+\phone[mobile]{0468 450 792}
+\email{vrandesh@gmail.com}
+\extrainfo{\href{https://linkedin.com/in/vrandesh}{LinkedIn}}
 
 \begin{document}
 
@@ -60,7 +58,7 @@
 % ============================================================
 
 \vspace{6pt}
-\small{[Write a 3-5 line profile statement tailored to the role you're applying for. Focus on what makes you uniquely qualified. Example: "Data scientist with a PhD in [field] and X years of industry experience. Combines deep domain expertise in [domain] with strong applied machine learning and Python development skills. Experienced in developing end-to-end ML pipelines, from data ingestion to stakeholder-facing dashboards."]}
+\small{Hands-on Senior Software Engineer and Cloud Solution Architect with 17+ years designing, building and operating production software across financial services, payments, data, analytics and AI. Combines architecture ownership with full-stack delivery: translating business needs into secure, scalable platforms and then building the APIs, web applications, data services, integrations, cloud infrastructure and delivery pipelines required to run them in production. Cloud-agnostic across Azure, AWS and GCP; specialises in agentic AI systems, governed data platforms and human-in-the-loop controls integrated into enterprise-grade full-stack products.}
 
 % ============================================================
 %     CORE COMPETENCIES
@@ -70,15 +68,15 @@
 \vspace{1pt}
 \begin{itemize}
 
-\item \textbf{[Skill Category 1]}: [Specific skills, frameworks, tools. Be concrete.]
+\item \textbf{Full Stack Engineering}: Python, Django, FastAPI, Node.js, TypeScript, React, Vue.js, GraphQL and REST APIs; SQL and NoSQL data modelling; microservices, distributed systems and third-party integrations. Strong grounding in SOLID design, secure coding and maintainable production systems.
 
-\item \textbf{[Skill Category 2]}: [Specific skills, frameworks, tools.]
+\item \textbf{Cloud Architecture — Azure, AWS \& GCP}: Azure (Fabric, OneLake, SQL, Data Factory, Durable Functions, Entra ID SSO/RBAC, Power BI Embedded, DevOps); AWS (Lambda, Step Functions, Bedrock, S3); GCP (Firebase, Firestore, Cloud Functions). Serverless, event-driven and distributed patterns; identity and access management; CI/CD; monitoring and observability.
 
-\item \textbf{[Skill Category 3]}: [Specific skills, frameworks, tools.]
+\item \textbf{AI, Automation \& Agentic Systems}: Azure OpenAI, Azure AI Foundry, AWS Bedrock, LangGraph, LangChain, MCP integrations, Copilot Studio, Power Automate. RAG, function calling, structured outputs, agent orchestration, evaluation, guardrails and human-in-the-loop controls — integrated into full-stack platforms, not standalone prototypes.
 
-\item \textbf{[Skill Category 4]}: [Domain expertise, methods, approaches.]
+\item \textbf{Data Platforms \& Integration}: Microsoft Fabric, Databricks, OneLake, Azure Data Factory, Power BI, DAX; PostgreSQL, MongoDB, SQL Server, Firestore. Medallion architecture, governed semantic models, row-level security, batch and real-time ingestion, and operational integrations including Xero, MYOB and Workday Adaptive Planning.
 
-\item \textbf{[Skill Category 5]}: [Tools, platforms, software.]
+\item \textbf{Engineering Leadership}: Solution architecture, technical discovery, engineering standards, cross-functional team leadership (4–19 people), stakeholder communication and production support. Led teams while remaining hands-on in design, coding, troubleshooting and release delivery.
 
 \end{itemize}
 
@@ -90,32 +88,51 @@
 \vspace{3pt}
 \begin{itemize}
 
-% --- Most Recent Role ---
-\item{\cventry{[YYYY-Present]}{[Job Title]}{[Company]}{[City, Country]}{}{\vspace{1pt}
+\item{\cventry{Mar 2022-Present}{Senior Full Stack Developer \& Cloud/AI Solution Architect}{Findex Australia}{Melbourne, VIC}{}{\vspace{1pt}
+Architect and hands-on engineer across Findex Data Science platforms, owning delivery from discovery through full-stack implementation, cloud deployment, UAT and production support. Built enterprise portals, APIs, data foundations, calculation engines and AI-enabled workflows using Python/Django, FastAPI, GraphQL, Vue/React, Azure and Microsoft Fabric.
 \begin{itemize}
-    \item {[Achievement or responsibility 1 - be specific, use numbers where possible]}
-    \item {[Achievement or responsibility 2]}
-    \item {[Achievement or responsibility 3]}
-    \item {[Achievement or responsibility 4]}
+    \item {Led cross-functional teams of 4--19 across Education Portal, PerformX and KRM/STI initiatives; partnered with executives to manage scope, priorities, delivery risks and stakeholder expectations from discovery through UAT and release.}
+    \item {Built Payroll AI: a four-agent pipeline that reads Modern Award PDFs, extracts rules with clause references, generates client-specific calculation code and reports into Power BI. Registered as an eligible R\&D activity under the DISR R\&D Tax Incentive. Under- and over-payment detection moved from periodic audit to continuous control.}
+    \item {Built PerformX Agent: a conversational assistant answering plain-language data questions against a governed Power BI model via React and FastAPI, with triple permission enforcement and bounded self-repair on query failure. Deployed in browser and Microsoft Teams.}
+    \item {Architected KRM Remuneration Portal: full-stack STI, referral and audit platform using Python/Django, GraphQL and Vue/React with Entra ID SSO/RBAC, row-level security and governed Microsoft Fabric foundations. Onboarded 443 users and 129 people leaders.}
+    \item {Designed EduPort and WealthAI TMD Processing; established CI/CD, Grafana observability and human-in-the-loop patterns across all platforms. Stepped in as interim DevOps lead during a critical production incident.}
 \end{itemize}}}
 
 \vspace{3pt}
 
-% --- Previous Role ---
-\item{\cventry{[YYYY-YYYY]}{[Job Title]}{[Company]}{[City, Country]}{}{\vspace{1pt}
+\item{\cventry{Oct 2017-Mar 2022}{Senior Software Engineer, Product Innovation}{Quest Payment Systems}{Melbourne, VIC}{}{\vspace{1pt}
+Regulated payments engineering. Led backend and cloud delivery from concept to production for Donation Point Go, a contactless donation channel for charities and venues. Built and maintained 12+ microservices on AWS and Google Cloud using event-driven, serverless and auto-scaling architecture.
 \begin{itemize}
-    \item {[Achievement or responsibility 1]}
-    \item {[Achievement or responsibility 2]}
-    \item {[Achievement or responsibility 3]}
+    \item {Led a team of three and remained hands-on in backend engineering for Airpay mobile payments and POS applications, supporting secure transaction workflows and real-time financial data movement.}
+    \item {Designed high-availability architectures using Node.js, Django and Ember.js across AWS and GCP, including Lambda, Firebase, Firestore, serverless APIs and Elasticsearch.}
+    \item {Built and maintained 12+ microservices and third-party integration points including Xero and MYOB.}
 \end{itemize}}}
 
 \vspace{3pt}
 
-% --- Earlier Role ---
-\item{\cventry{[YYYY-YYYY]}{[Job Title]}{[Company]}{[City, Country]}{}{\vspace{1pt}
+\item{\cventry{Jun 2013-Jul 2017}{Technology Lead / Full Stack Developer}{Apptarix Mobility}{Bangalore, India}{}{\vspace{1pt}
+Filed provisional patent application 201641021557 — a recommendation engine combining commercial and learnt rules, with a method to measure which of the two is earning its place. Built an early NLP sentiment engine using cosine similarity in R and Python. Managed a team of 5 across OTT, analytics and EdTech product lines.
 \begin{itemize}
-    \item {[Achievement or responsibility 1]}
-    \item {[Achievement or responsibility 2]}
+    \item {Led architecture and development across analytics dashboards, OTT platforms and mobile engagement products including Teletango, PrepSuite and Mystikit.}
+    \item {Designed scalable data ingestion, scraping and processing services; developed automation scripts for video transcoding, content extraction, web scraping and market basket analysis.}
+    \item {Mentored engineering teams in agile delivery, technical design and data-driven development practices.}
+\end{itemize}}}
+
+\vspace{3pt}
+
+\item{\cventry{Jan 2020-Aug 2021}{Technology Consultant}{BuyPal}{Melbourne, VIC}{}{\vspace{1pt}
+Concurrent consulting engagement alongside Quest. Led knowledge transfer of BuyPal's entire operations and planned migration of legacy platform to modern web standards and technology.}}
+
+\vspace{3pt}
+
+\item{\cventry{}{Earlier Experience}{}{}{}{\vspace{1pt}
+\begin{itemize}
+    \item {Esri Australia (Aug--Sep 2017) — Full Stack Developer, AngularJS and Node.js, AWS, ArcGIS.}
+    \item {Ionos Networks (Nov 2014--Mar 2015) — Resident Technology Lead via Apptarix, Node.js/PHP/Python, AWS S3.}
+    \item {Studio 360eye (Sep 2012--May 2013) — Founder; distributed team of six, client management and delivery.}
+    \item {UNI Group (Feb 2011--Sep 2012) — Senior Software Engineer and project lead.}
+    \item {Hewlett-Packard / Mphasis (Jan 2009--Mar 2010) — Infrastructure Engineer, 70+ Linux/HP-UX servers, Perl automation.}
+    \item {Robert Bosch (Mar--Jun 2007) — Project Trainee, Electronics Circuits Boards Division.}
 \end{itemize}}}
 
 \end{itemize}
@@ -128,14 +145,14 @@
 \vspace{1pt}
 \begin{itemize}
 
-\item{\cventry{[YYYY-YYYY]}{[Degree] in [Field]}{[Institution]}{[City, Country]}{}{\vspace{1pt}
-Thesis: ``[Thesis Title].'' [Brief description of research focus.]
+\item{\cventry{Jun 2023-Aug 2023}{Certificate in Business Analytics}{Harvard Business School Online}{Online}{}{\vspace{1pt}
+Business analytics, strategy and commercial decision-making.
 }}
 
 \vspace{3pt}
 
-\item{\cventry{[YYYY-YYYY]}{[Degree] in [Field]}{[Institution]}{[City, Country]}{}{\vspace{1pt}
-[Brief description or key topics.]
+\item{\cventry{2004-2008}{BE, Electronics \& Communication}{Visvesvaraya Technological University}{Karnataka, India}{}{\vspace{1pt}
+First Class Honours. Electronics, embedded systems and signal processing.
 }}
 
 \end{itemize}
@@ -147,27 +164,17 @@ Thesis: ``[Thesis Title].'' [Brief description of research focus.]
 \section{Languages}
 \vspace{1pt}
 \begin{itemize}
-\item {[Language 1] (native), [Language 2] (fluent), [Language 3] (intermediate).}
+\item {English (Expert), Hindi (Fluent), Kannada (Native), Konkani (Native).}
 \end{itemize}
 
 % ============================================================
-%     PUBLICATIONS (optional)
+%     PATENTS
 % ============================================================
 
-\section{Publications}
+\section{Patents \& IP}
 \vspace{1pt}
 \begin{itemize}
-\item {[Author(s)] ([Year]). [Title]. [Journal/Conference]. \href{[DOI_URL]}{DOI link}}
-\end{itemize}
-
-% ============================================================
-%     HONORS AND AWARDS (optional)
-% ============================================================
-
-\section{Honors and Awards}
-\vspace{1pt}
-\begin{itemize}
-\item{\textbf{[Award Name]} -- [Event/Organization] ([Year]).}
+\item {Patent application \textbf{201641021557} — ``A system and method to measure the effectiveness and performance of commercial rules and learnt rules that recommend content to user(s).'' Filed 2016, Apptarix Mobility.}
 \end{itemize}
 
 % ============================================================

@@ -104,6 +104,22 @@ The cover letter is **not a CV repetition**. It should be forward-looking:
 - Lead with project management, mentoring, course development
 - Frame advanced degrees as evidence of independent project delivery
 
+## Patterns Observed in Past Applications
+
+*Extracted from 9 cover letters in `documents/cv/` (Aug 2026). Apply these as defaults; override only when a specific role calls for a different approach.*
+
+**Opening formula:** "I am very interested in the [Role] opportunity [at / being represented by] [Company/Recruiter]." + "With 17+ years of software engineering experience..." in sentence 2. Consistent across all 9 letters.
+
+**Salutation:** When the recruiter or hiring manager's first name is known, use it directly ("Dear Maree,", "Dear Dave,", "Dear Koenraad,"). Fall back to "Dear Hiring Manager," only when name is unknown — never "To whom it may concern."
+
+**Bridge paragraph:** Every letter has a dedicated paragraph connecting specific Findex deliverables to the role's core requirements. This paragraph names the technology stack from the job posting explicitly (e.g. "React/TypeScript, Node.js, GraphQL and AWS" — quoting the posting's own terms).
+
+**Closing formula (consistent across all 9 letters):** "I would welcome the opportunity to discuss how my experience across [X, Y, Z] could contribute to [Company's goal/team]."
+
+**What is never present:** Em-dashes, "I am passionate about", "leverage my skills", "hit the ground running", "synergies". Zero instances across 9 letters — consistent with Critical Rules above.
+
+**Length signal:** All 9 letters are single-page. Body paragraphs are 3–5 sentences each; bullet lists are used in most but not all letters. When bullets appear, there are 3–5 of them.
+
 ## Multi-language Applications
 - Default to the language of the job posting
 - Cover letters in the posting's language should feel natural, not translated

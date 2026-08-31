@@ -14,30 +14,43 @@ Keep answers to 1-2 minutes. Be specific. End with what you learned or would do 
 
 ## Ready-Made STAR Examples
 
-<!-- These are populated by /setup from your actual experience. Below are templates showing the format. -->
+<!-- Complete the S/T/A/R fields below using your own words before using these in interviews.
+     See "## STAR Candidates (Complete Manually)" further down for the stub details. -->
 
-### 1. [PROJECT_NAME] ([SKILL_DEMONSTRATED])
-**S:** [CONTEXT - what was happening, what was the problem]
-**T:** [YOUR RESPONSIBILITY - what you specifically needed to do]
-**A:** [WHAT YOU DID - specific actions, tools, methods]
-**R:** [OUTCOME - measurable results, adoption, impact]
-**Use for:** "[QUESTION_TYPE_1]", "[QUESTION_TYPE_2]"
+### 1. Payroll AI Pipeline (Agentic AI / Production Engineering)
+**S:**
+**T:**
+**A:**
+**R:**
+**Use for:** "Tell me about a complex technical system you built", "How do you approach AI in regulated environments", "Describe a project with measurable business impact"
 
-### 2. [PROJECT_NAME] ([SKILL_DEMONSTRATED])
-**S:** [CONTEXT]
-**T:** [YOUR RESPONSIBILITY]
-**A:** [WHAT YOU DID]
-**R:** [OUTCOME]
-**Use for:** "[QUESTION_TYPE_1]", "[QUESTION_TYPE_2]"
+### 2. PerformX Agent (Permission-sensitive AI / Self-healing Systems)
+**S:**
+**T:**
+**A:**
+**R:**
+**Use for:** "Describe a system where security was critical", "Tell me about a time you had to handle failure gracefully", "How do you build AI responsibly"
 
-### 3. [PROJECT_NAME] ([SKILL_DEMONSTRATED])
-**S:** [CONTEXT]
-**T:** [YOUR RESPONSIBILITY]
-**A:** [WHAT YOU DID]
-**R:** [OUTCOME]
-**Use for:** "[QUESTION_TYPE_1]", "[QUESTION_TYPE_2]"
+### 3. KRM Remuneration Portal (Enterprise Platform / Team Leadership)
+**S:**
+**T:**
+**A:**
+**R:**
+**Use for:** "Tell me about a large-scale platform you delivered", "Describe your leadership style", "How do you replace legacy systems"
 
-<!-- Add more STAR examples as needed. Aim for 4-6 covering different competencies. -->
+### 4. Donation Point Go — Quest Payment Systems (From Concept to Production)
+**S:**
+**T:**
+**A:**
+**R:**
+**Use for:** "Tell me about a greenfield project you owned end to end", "Describe working in a regulated / high-availability environment", "How do you scale for unpredictable load"
+
+### 5. Interim DevOps Lead — Production Incident (Leadership Under Pressure)
+**S:**
+**T:**
+**A:**
+**R:**
+**Use for:** "Tell me about a time you stepped up without being asked", "Describe a crisis you managed", "How do you handle ambiguity"
 
 ## Common Tough Questions
 
@@ -101,6 +114,92 @@ Keep answers to 1-2 minutes. Be specific. End with what you learned or would do 
 - When you receive any update (interview invitation, rejection, or status update), send a brief thank-you message
 - Express appreciation for their time and the process
 - Keep it short (2-3 sentences)
+
+## STAR Candidates (Complete Manually)
+
+Fill in the Situation / Task / Action / Result fields below in your own words, then move the completed examples up into "## Ready-Made STAR Examples" above.
+
+### Payroll AI Pipeline
+**Source:** CV — Findex, Senior Full Stack Developer & Cloud/AI Solution Architect
+**What happened:** Built a four-agent pipeline that reads Modern Award and Enterprise Agreement PDFs, extracts rules with clause references, generates client-specific payroll calculation code, runs it against real data, and reports into Power BI. Registered as an eligible R&D activity under the DISR R&D Tax Incentive.
+**Why it matters:** Covers agentic AI design, production-grade LLM integration, compliance/explainability, and measurable business impact — answers almost any "complex system" or "AI in enterprise" question.
+**S/T/A/R stub:**
+- Situation:
+- Task:
+- Action:
+- Result:
+
+### PerformX Agent
+**Source:** CV — Findex, Senior Full Stack Developer & Cloud/AI Solution Architect
+**What happened:** Built a conversational agent (React + FastAPI, Entra ID auth) that answers plain-language data questions against a governed Power BI model. Permission is enforced three separate times; when a query fails, a bounded self-repair loop rewrites it and gives up gracefully rather than inventing an answer.
+**Why it matters:** Covers security-first AI design, graceful degradation, and the challenge of building AI on sensitive financial data.
+**S/T/A/R stub:**
+- Situation:
+- Task:
+- Action:
+- Result:
+
+### KRM Remuneration Portal
+**Source:** CV — Findex, Full Stack Platform Architect and Delivery Lead
+**What happened:** Architected and built a full-stack platform for short-term incentive, referral and audit data using Python/Django, GraphQL, Vue/React, Microsoft Fabric and Power BI Embedded. Onboarded 443 users and 129 people leaders; replaced a spreadsheet-bound incentive policy with an auditable calculation engine.
+**Why it matters:** Covers large-scale platform delivery, team leadership, data governance, and replacing legacy systems with production-grade alternatives.
+**S/T/A/R stub:**
+- Situation:
+- Task:
+- Action:
+- Result:
+
+### Donation Point Go — Quest Payment Systems
+**Source:** CV — Quest Payment Systems, Senior Software Engineer Product Innovation
+**What happened:** Led backend and cloud delivery from initial concept through to live production for a contactless donation channel for charities and venues. Built 12+ microservices and integrations on AWS and Google Cloud using event-driven, serverless and auto-scaling architecture.
+**Why it matters:** Covers greenfield product ownership, regulated payment systems, serverless architecture, and scaling for unpredictable load.
+**S/T/A/R stub:**
+- Situation:
+- Task:
+- Action:
+- Result:
+
+### Interim DevOps Lead — Production Incident
+**Source:** CV — Findex, Senior Full Stack Developer & Cloud/AI Solution Architect
+**What happened:** Stepped in as interim DevOps lead during a critical production incident at Findex; stabilised systems, improved CI/CD reliability, introduced Grafana for observability, and reduced manual operational overhead.
+**Why it matters:** Covers initiative without mandate, crisis management, and leaving systems better than you found them — strong answer for leadership and "tell me about a time you went beyond your role" questions.
+**S/T/A/R stub:**
+- Situation:
+- Task:
+- Action:
+- Result:
+
+### WealthAI TMD Processing
+**Source:** CV — Findex, Solution designer and engineer
+**What happened:** Built a serverless pipeline (Azure Durable Functions) that processes Target Market Determination PDFs in parallel, extracts required fields against a strict schema, answers a set of narrow compliance questions, and passes those answers to a deterministic rule engine that assigns the risk rating. "The AI extracts and classifies; the rule engine decides."
+**Why it matters:** Strong example of explainable AI design, separation of probabilistic and deterministic components, compliance-grade document automation, and serverless at scale — use for "AI in regulated environments", "how do you make AI explainable", "describe a high-volume document processing system."
+**S/T/A/R stub:**
+- Situation:
+- Task:
+- Action:
+- Result:
+
+### EduPort — Education Analytics Platform
+**Source:** CV — Findex, Full Stack Platform Architect and Delivery Lead
+**What happened:** Built a full-stack decision-support platform for ANZ schools that guides non-analyst users through defensible benchmark comparisons, demographic analysis and board-ready reporting. Designed Azure AI Foundry-backed workflows for student debtor ratios, parent payment analysis, benchmarking insights and automated board-report generation on a monthly schedule.
+**Why it matters:** Covers cross-sector AI delivery (non-financial domain), designing for non-technical end users, scheduled Azure AI automation, and stakeholder tool design — use for "describe AI you've built outside your core domain", "how do you make data tools accessible", "Azure AI Foundry experience."
+**S/T/A/R stub:**
+- Situation:
+- Task:
+- Action:
+- Result:
+
+### Copilot Studio BI Agent
+**Source:** AI Automation CV — Findex, Senior Full Stack Developer & AI Architect
+**What happened:** Built a topic-based Copilot Studio agent for the Findex BI team, grounded on SharePoint and Excel knowledge sources, calling a custom DAX connector into the governed Power BI workspace. Published as a Teams bot with separate test/prod endpoints consumed by KRM and Payroll AI platforms; secured with Entra ID and Power Platform DLP policies. Removed a manual Finance team adjustment step that ran every cycle.
+**Why it matters:** Covers Microsoft Power Platform delivery, AI adoption and change management, enterprise governance of AI agents, and the "AI into the tools people already use" philosophy — use for "Copilot Studio experience", "Microsoft AI stack", "describe a time AI removed a manual process", "how do you govern AI in a large organisation."
+**S/T/A/R stub:**
+- Situation:
+- Task:
+- Action:
+- Result:
+
+---
 
 ## Roleplay Guidelines
 When the user asks for interview practice:

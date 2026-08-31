@@ -1,84 +1,130 @@
 # Search Queries for Job Scraper
 
-<!-- SETUP: Customize these queries based on your skills, target roles, and location -->
+<!-- Populated by /setup for Vrandesh Bandikatti — Melbourne, Australia -->
 
 ## Installed portal CLIs (primary for `/scrape`)
 
-`/scrape` discovers every portal skill under `.agents/skills/*/SKILL.md` and runs its CLI first. Shipped country-agnostic CLIs include `linkedin-search` and `freehire-search`; Danish demos and any skill you add with `/add-portal` are included the same way. You do **not** need a matching `site:` line below for those CLIs to run.
+`/scrape` discovers every portal skill under `.agents/skills/*/SKILL.md` and runs its CLI first. Shipped country-agnostic CLIs include `linkedin-search` and `freehire-search`; any skill you add with `/add-portal` is included the same way. You do **not** need a matching `site:` line below for those CLIs to run.
 
 The `site:` query templates in this file are the **WebSearch fallback** — for portals without a CLI, company career pages, or when a CLI fails.
 
-**Language scope:** write every query category in every language listed in your CLAUDE.md Languages table (typically 1-2, sometimes more). A posting requiring a language you have *not* declared, as a job condition, is excluded before scoring; a posting requiring a *higher level* than you declared in a language you *do* work in is flagged for your own judgment, not excluded — see `04-job-evaluation.md`'s Language Gate, the single source of truth for this rule. Translate each category's keywords rather than machine-translating word-for-word (e.g. "Frontend Developer" -> "Desarrollador Frontend", not a literal word-for-word translation) if you work in more than one language.
+**Language scope:** All queries below are in English (CV language and primary market language). The Language Gate in `04-job-evaluation.md` handles any postings with non-English language requirements.
 
 ## Search Sites
 
-Primary (your market's job boards - scaffold one with `/add-portal`):
-- **[YOUR_JOB_BOARD]** - your market's largest general job board
-- **linkedin.com/jobs** - LinkedIn job listings (filter: [YOUR_COUNTRY] / [YOUR_CITY]); also covered by `linkedin-search` CLI
-- **[YOUR_INDUSTRY_JOB_BOARD]** - a niche/industry board for your field (optional)
-- **[YOUR_ADDITIONAL_JOB_BOARD]** - another major board for your market (optional)
+Primary (Australian job boards):
+- **seek.com.au** — Australia's largest general job board
+- **linkedin.com/jobs** — LinkedIn job listings (filter: Melbourne / Australia); also covered by `linkedin-search` CLI
+- **au.indeed.com** — Indeed Australia
+- **gradconnection.com.au** — skip (graduate-only, excluded by deal-breaker)
 
 Secondary (company career pages via Google):
-- Direct Google searches with `site:` filters for known target companies
+- Direct Google searches with `site:` filters for target companies
 
 ## Query Categories
 
-Queries are grouped by priority. Write **each category in every language from your Languages table** (see Language scope above). Combine each query with your location terms (e.g. your city, region, or metro area) where the site supports it.
-
-**Organize by function, not job title.** The same underlying work carries different titles across companies and markets (a "Data Scientist" role at one employer may be posted as "Insights Analyst" or "Data Consultant" at another). Name each priority category after the function it covers, and list several plausible job titles as query variants within that category rather than betting an entire priority tier on one exact title string.
-
-### Priority 1: [YOUR_PRIMARY_ROLE_TYPE]
-
-These match your strongest and most desired career direction.
+### Priority 1: AI/Agentic Engineering + Cloud Architecture
+*Strongest and most desired direction — production AI systems on cloud platforms*
 
 ```
-site:[YOUR_JOB_BOARD] "[YOUR_PRIMARY_JOB_TITLE_1]" [YOUR_CITY]
-site:[YOUR_JOB_BOARD] "[YOUR_PRIMARY_JOB_TITLE_2]" [YOUR_CITY]
-site:[YOUR_JOB_BOARD] "[YOUR_KEY_SKILL]" [YOUR_CITY]
-site:linkedin.com/jobs "[YOUR_PRIMARY_JOB_TITLE_1]" [YOUR_COUNTRY]
+site:seek.com.au "AI Engineer" Melbourne
+site:seek.com.au "AI Solutions Architect" Melbourne
+site:seek.com.au "Agentic AI" Melbourne
+site:seek.com.au "Cloud AI Engineer" Melbourne
+site:seek.com.au "AI Platform Engineer" Melbourne
+site:au.indeed.com "AI Engineer" "Azure OR AWS OR GCP" Melbourne
+site:linkedin.com/jobs "AI Engineer" Melbourne Australia
+site:linkedin.com/jobs "Cloud Solution Architect" "AI" Melbourne
+site:seek.com.au "Machine Learning Engineer" Melbourne
+site:seek.com.au "LLM Engineer" Melbourne
+site:seek.com.au "GenAI Engineer" Melbourne
 ```
 
-### Priority 2: [YOUR_DOMAIN_EXPERTISE]
-
-These match your domain expertise.
-
-```
-site:[YOUR_JOB_BOARD] [YOUR_DOMAIN_KEYWORD_1] [YOUR_CITY] OR [YOUR_REGION]
-site:[YOUR_JOB_BOARD] [YOUR_DOMAIN_KEYWORD_2] [YOUR_COUNTRY]
-site:linkedin.com/jobs [YOUR_DOMAIN_KEYWORD_1] [YOUR_CITY] [YOUR_COUNTRY]
-```
-
-### Priority 3: [YOUR_ADJACENT_ROLE_TYPE]
-
-Adjacent roles you could pivot into.
+### Priority 2: Senior Full Stack Engineering
+*Core strength — enterprise full-stack platform delivery*
 
 ```
-site:[YOUR_JOB_BOARD] "[YOUR_ADJACENT_TITLE_1]" [YOUR_KEY_SKILL] [YOUR_CITY]
-site:[YOUR_JOB_BOARD] "[YOUR_ADJACENT_TITLE_2]" [YOUR_KEY_SKILL] [YOUR_CITY]
+site:seek.com.au "Senior Full Stack Developer" Melbourne
+site:seek.com.au "Senior Software Engineer" Melbourne
+site:seek.com.au "Staff Engineer" Melbourne
+site:seek.com.au "Principal Engineer" Melbourne
+site:seek.com.au "Senior Full Stack Engineer" "Python OR Django OR FastAPI" Melbourne
+site:au.indeed.com "Senior Software Engineer" "Python" "Azure OR AWS" Melbourne
+site:linkedin.com/jobs "Senior Full Stack Developer" Melbourne Australia
+site:linkedin.com/jobs "Staff Engineer" Melbourne Australia
+site:seek.com.au "Senior Python Developer" Melbourne
+site:seek.com.au "Senior Backend Engineer" "Python" Melbourne
 ```
 
-### Priority 4: Broader Technical / Consulting
-
-Wider net for general technical roles.
+### Priority 3: Cloud Architecture + Solutions Architecture
+*Architecture ownership with hands-on delivery*
 
 ```
-site:[YOUR_JOB_BOARD] [YOUR_KEY_SKILL] developer [YOUR_CITY]
-site:linkedin.com/jobs "[YOUR_KEY_SKILL] developer" [YOUR_CITY]
-site:[YOUR_JOB_BOARD] "technical consultant" [YOUR_DOMAIN] [YOUR_CITY]
+site:seek.com.au "Cloud Solution Architect" Melbourne
+site:seek.com.au "Solutions Architect" Melbourne
+site:seek.com.au "Cloud Architect" "Azure OR AWS" Melbourne
+site:seek.com.au "Enterprise Architect" Melbourne
+site:seek.com.au "Technical Architect" "Python OR Full Stack" Melbourne
+site:au.indeed.com "Solutions Architect" "Azure" Melbourne
+site:linkedin.com/jobs "Solutions Architect" Melbourne Australia
+site:linkedin.com/jobs "Cloud Architect" "Azure" Melbourne
+```
+
+### Priority 4: Technical Leadership
+*Leadership roles that keep engineering accountability*
+
+```
+site:seek.com.au "Technical Lead" Melbourne
+site:seek.com.au "Engineering Lead" Melbourne
+site:seek.com.au "Head of Engineering" Melbourne
+site:seek.com.au "Lead Engineer" "AI OR Cloud OR Full Stack" Melbourne
+site:seek.com.au "Engineering Manager" "hands-on OR technical" Melbourne
+site:linkedin.com/jobs "Technical Lead" "Python OR Azure" Melbourne Australia
+site:linkedin.com/jobs "Head of Engineering" Melbourne Australia
+```
+
+### Priority 5: Domain-specific (Financial Services + AI)
+*Sector-specific searches leveraging FinTech/financial services background*
+
+```
+site:seek.com.au "AI Engineer" "fintech OR financial OR payments" Melbourne
+site:seek.com.au "Senior Developer" "Azure" "financial services" Melbourne
+site:seek.com.au "Platform Engineer" "Azure OR Python" Melbourne
+site:seek.com.au "Data Platform Engineer" "Microsoft Fabric OR Databricks" Melbourne
+site:linkedin.com/jobs "AI Engineer" "financial services" Melbourne
+site:seek.com.au "Full Stack Developer" "Azure OpenAI OR LangChain OR LangGraph" Melbourne
+```
+
+### Target Company Searches
+*Monitor specific employers for openings*
+
+```
+site:atlassian.com/company/careers "engineer" OR "architect"
+site:canva.com/careers "engineer" OR "architect"
+site:seek.com.au/companies "Deloitte Digital" engineer Melbourne
+site:seek.com.au/companies "Thoughtworks" Melbourne
+site:seek.com.au/companies "Xero" engineer Melbourne
+site:seek.com.au/companies "REA Group" engineer Melbourne
+site:seek.com.au/companies "Afterpay" OR "Block" engineer Melbourne
+site:microsoft.com/en-au/jobs "engineer" OR "architect" Melbourne
 ```
 
 ## Location Filter
 
-When evaluating results, verify the job location is within reasonable commute distance from your home. Define acceptable areas:
-- [YOUR_CITY] and surrounding areas
-- [ACCEPTABLE_AREA_1]
-- [ACCEPTABLE_AREA_2]
-- [BORDERLINE_AREA] (borderline - ~X min by transit)
-- [TOO_FAR_AREA] (too far)
+When evaluating results, verify the job location fits the following tiers:
+
+- **Ideal:** Melbourne CBD, inner suburbs (3-15km radius), hybrid with ≥3 days WFH
+- **Acceptable:** Greater Melbourne metro, full remote (anywhere in Australia)
+- **Borderline:** Occasional interstate presence required (Sydney/Brisbane/Perth/Adelaide travel is fine; flag if >2 days/month average)
+- **FAIL (deal-breaker):** Relocation required outside Melbourne
+
+## Salary Filter
+
+Flag any role where the advertised or estimated salary is below **AUD $150,000 base + superannuation**. Do not auto-exclude — flag for the user's review in case the range is negotiable or the posting is understated.
 
 ## Language Filter
 
-Your working languages and levels are in CLAUDE.md's Languages table. When filtering scraped results, apply `04-job-evaluation.md`'s Language Gate: a posting requiring a language you haven't declared at all is excluded; a posting requiring a higher level than you declared in a language you do work in is not excluded, flag it clearly instead (see `job-scraper/SKILL.md`'s Step 3 "Quick Fit Assessment" for how the flag surfaces in `/scrape` output). Postings simply *written* in a language you don't work in, that don't require it on the job, are fine.
+Working languages and levels are in CLAUDE.md's Languages table. Apply `04-job-evaluation.md`'s Language Gate: a posting requiring a language not declared (e.g. Mandarin required) is a hard FAIL; a posting requiring a higher level than declared in a language that is listed is a FLAG (not excluded). Postings simply *written* in a language not worked in, that don't require it on the job, are fine.
 
 ## Date Filter
 
@@ -87,4 +133,6 @@ Only include jobs posted within the last 14 days, or with an application deadlin
 ## Adapting Queries
 
 If the user specifies a focus area, select queries from the matching category and also generate 2-3 custom queries for that focus. For example:
-- "/scrape [focus_area]" -> relevant category queries + custom focus-specific queries
+- `/scrape AI` → Priority 1 queries + custom agentic/LLM-specific queries
+- `/scrape fintech` → Priority 5 queries + target company searches for ANZ/NAB/Xero/Afterpay
+- `/scrape architecture` → Priority 3 queries + any architect openings at target companies
